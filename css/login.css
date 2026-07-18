@@ -1,0 +1,390 @@
+/* ===================================
+   Login Page CSS
+   S.K. Trading Company
+=================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #f5f5f5;
+    color: #333;
+}
+
+
+/* ===================================
+   Login Section
+=================================== */
+
+.login-section {
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 8%;
+    background: linear-gradient(135deg, #eef5fb, #ffffff);
+}
+
+.login-container {
+    width: 100%;
+    max-width: 1300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, .12);
+}
+
+
+/* ===================================
+   Left Side
+=================================== */
+
+.login-left {
+    background: linear-gradient(135deg, #0F4C81, #1d6fb8);
+    color: #fff;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-left h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.login-left h2 {
+    font-size: 46px;
+    margin-bottom: 20px;
+}
+
+.login-left p {
+    line-height: 1.8;
+    margin-bottom: 35px;
+    font-size: 18px;
+}
+
+.features {
+    margin-bottom: 40px;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+    font-size: 18px;
+}
+
+.feature i {
+    margin-right: 12px;
+    color: #FFD54F;
+    font-size: 20px;
+}
+
+.login-image {
+    width: 100%;
+    max-width: 420px;
+    margin-top: 20px;
+    align-self: center;
+}
+
+
+/* ===================================
+   Right Side
+=================================== */
+
+.login-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+}
+
+.login-card {
+    width: 100%;
+    max-width: 450px;
+}
+
+.login-card h2 {
+    font-size: 34px;
+    color: #0F4C81;
+    margin-bottom: 10px;
+}
+
+.login-card p {
+    color: #666;
+    margin-bottom: 35px;
+    line-height: 1.7;
+}
+
+
+/* ===================================
+   Form
+=================================== */
+
+.input-box {
+    margin-bottom: 22px;
+}
+
+.input-box label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: .3s;
+}
+
+.input-box input:focus {
+    border-color: #0F4C81;
+    box-shadow: 0 0 8px rgba(15, 76, 129, .2);
+}
+
+.password-box {
+    position: relative;
+}
+
+.password-box input {
+    padding-right: 50px;
+}
+
+.password-box i {
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #777;
+    transition: .3s;
+}
+
+.password-box i:hover {
+    color: #0F4C81;
+}
+
+.login-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    font-size: 15px;
+}
+
+.login-options a {
+    color: #0F4C81;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-options a:hover {
+    text-decoration: underline;
+}
+
+
+/* ===================================
+   Login Page CSS
+   S.K. Trading Company
+=================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #f5f5f5;
+    color: #333;
+}
+
+
+/* ===================================
+   Login Section
+=================================== */
+
+.login-section {
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 8%;
+    background: linear-gradient(135deg, #eef5fb, #ffffff);
+}
+
+.login-container {
+    width: 100%;
+    max-width: 1300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, .12);
+}
+
+
+/* ===================================
+   Left Side
+=================================== */
+
+.login-left {
+    background: linear-gradient(135deg, #0F4C81, #1d6fb8);
+    color: #fff;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-left h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.login-left h2 {
+    font-size: 46px;
+    margin-bottom: 20px;
+}
+
+.login-left p {
+    line-height: 1.8;
+    margin-bottom: 35px;
+    font-size: 18px;
+}
+
+.features {
+    margin-bottom: 40px;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+    font-size: 18px;
+}
+
+.feature i {
+    margin-right: 12px;
+    color: #FFD54F;
+    font-size: 20px;
+}
+
+.login-image {
+    width: 100%;
+    max-width: 420px;
+    margin-top: 20px;
+    align-self: center;
+}
+
+
+/* ===================================
+   Right Side
+=================================== */
+
+.login-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+}
+
+.login-card {
+    width: 100%;
+    max-width: 450px;
+}
+
+.login-card h2 {
+    font-size: 34px;
+    color: #0F4C81;
+    margin-bottom: 10px;
+}
+
+.login-card p {
+    color: #666;
+    margin-bottom: 35px;
+    line-height: 1.7;
+}
+
+
+/* ===================================
+   Form
+=================================== */
+
+.input-box {
+    margin-bottom: 22px;
+}
+
+.input-box label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: .3s;
+}
+
+.input-box input:focus {
+    border-color: #0F4C81;
+    box-shadow: 0 0 8px rgba(15, 76, 129, .2);
+}
+
+.password-box {
+    position: relative;
+}
+
+.password-box input {
+    padding-right: 50px;
+}
+
+.password-box i {
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #777;
+    transition: .3s;
+}
+
+.password-box i:hover {
+    color: #0F4C81;
+}
+
+.login-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    font-size: 15px;
+}
+
+.login-options a {
+    color: #0F4C81;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-options a:hover {
+    text-decoration: underline;
+}

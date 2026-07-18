@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login | S.K. Trading Company</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- Common CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Login CSS -->
+    <link rel="stylesheet" href="../css/login.css">
+
+</head>
+
+<body>
+
+    <!-- ================= Header ================= -->
+
+    <header>
+
+        <!-- Top Navbar -->
+
+        <div class="navbar">
+
+            <div class="nav-logo">
+
+                <a href="../index.html">
+                    <img src="../assets/img/logo.jpg" alt="S.K. Trading Company">
+                </a>
+
+            </div>
+
+            <div class="nav-address">
+
+                <p class="deliver">Deliver to</p>
+
+                <div class="location">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    <span>India</span>
+
+                </div>
+
+            </div>
+
+            <div class="nav-search">
+
+                <select>
+
+                    <option>All</option>
+
+                    <option>Accessories</option>
+
+                    <option>Fashion</option>
+
+                    <option>Mobile Accessories</option>
+
+                    <option>Gift Items</option>
+
+                </select>
+
+                <input type="text" placeholder="Search Products...">
+
+                <button type="button" aria-label="Search">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                </button>
+
+            </div>
+
+            <div class="nav-login">
+
+                <a href="login.html">Login</a>
+
+            </div>
+
+            <div class="nav-cart">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+                <span>Cart</span>
+
+            </div>
+
+        </div>
+
+        <!-- Menu -->
+
+        <nav class="menu-bar">
+
+            <a href="../index.html">
+                <i class="fa-solid fa-house"></i> Home
+            </a>
+
+            <a href="products.html">
+                <i class="fa-solid fa-box"></i> Products
+            </a>
+
+            <a href="categories.html">
+                <i class="fa-solid fa-layer-group"></i> Categories
+            </a>
+
+            <a href="about.html">
+                <i class="fa-solid fa-circle-info"></i> About
+            </a>
+
+            <a href="contact.html">
+                <i class="fa-solid fa-phone"></i> Contact
+            </a>
+
+        </nav>
+
+    </header>
+
+    <!-- ================= Main ================= -->
+
+    <main>
+
+        <section class="login-section">
+
+            <div class="login-container">
+
+                <!-- Left Side -->
+
+                <div class="login-left">
+
+                    <h1>Welcome to</h1>
+
+                    <h2>S.K. Trading Company</h2>
+
+                    <p>
+
+                        Trusted Trading Partner for Premium Products, Fast Delivery and Secure Shopping Experience.
+
+                    </p>
+
+                    <div class="features">
+
+                        <div class="feature">
+
+                            <i class="fa-solid fa-circle-check"></i>
+
+                            <span>Quality Products</span>
+
+                        </div>
+
+                        <div class="feature">
+
+                            <i class="fa-solid fa-circle-check"></i>
+
+                            <span>Secure Shopping</span>
+
+                        </div>
+
+                        <div class="feature">
+
+                            <i class="fa-solid fa-circle-check"></i>
+
+                            <span>Fast Delivery</span>
+
+                        </div>
+
+                        <div class="feature">
+
+                            <i class="fa-solid fa-circle-check"></i>
+
+                            <span>24×7 Customer Support</span>
+
+                        </div>
+
+                    </div>
+
+                    <img src="../assets/img/login-banner.png" alt="Login Banner" class="login-image">
+
+                </div>
+
+                <!-- Right Side -->
+
+                <div class="login-right">
+
+                    <div class="login-card">
+
+                        <h2>Welcome Back 👋</h2>
+
+                        <p>
+
+                            Login to continue shopping with S.K. Trading Company.
+
+                        </p>
+
+                        <form id="loginForm">
+
+                            <div class="input-box">
+
+                                <label>Email Address</label>
+
+                                <input type="email" id="email" placeholder="Enter your email" required>
+
+                            </div>
+
+                            <div class="input-box">
+
+                                <label>Password</label>
+
+                                <div class="password-box">
+
+                                    <input type="password" id="password" placeholder="Enter your password" autocomplete="current-password" required>
+
+                                    <i class="fa-solid fa-eye" id="togglePassword">
+                                    </i>
+
+                                </div>
+
+                            </div>
+
+                            <div class="login-options">
+
+                                <label>
+
+                                    <input
+                                        type="checkbox"
+                                        id="remember">
+
+                                    Remember Me
+
+                                </label>
+
+                                <a href="#">
+                                    Forgot Password?
+                                </a>
+
+                            </div>
+
+                            <button type="submit" class="login-btn" id="loginBtn">
+
+                                <i class="fa-solid fa-right-to-bracket"></i>
+
+                                Login
+
+                            </button>
+
+                            <div class="divider">
+
+                                <span>OR</span>
+
+                            </div>
+                            <button type="button" class="google-btn">
+
+                                <i class="fa-brands fa-google"></i>
+
+                                Continue with Google
+
+                            </button>
+
+                            <div class="register-link">
+
+                                <p>
+
+                                    Don't have an account?
+
+                                    <a href="register.html">
+
+                                        Create Account
+
+                                    </a>
+
+                                </p>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- ================= Footer ================= -->
+
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="footer-box">
+
+                <h2>S.K. Trading Company</h2>
+
+                <p>
+
+                    We provide quality products at affordable prices with trusted delivery and excellent customer service.
+
+                </p>
+
+            </div>
+
+            <div class="footer-box">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+
+                    <li>
+                        <a href="../index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="products.html">Products</a>
+                    </li>
+
+                    <li>
+                        <a href="categories.html">Categories</a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">About Us</a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="footer-box">
+
+                <h3>Customer Support</h3>
+
+                <ul>
+
+                    <li><a href="#">FAQs</a></li>
+
+                    <li><a href="#">Shipping Policy</a></li>
+
+                    <li><a href="#">Return Policy</a></li>
+
+                    <li><a href="#">Privacy Policy</a></li>
+
+                </ul>
+
+            </div>
+
+            <div class="footer-box">
+
+                <h3>Contact</h3>
+
+                <p>
+
+                    <i class="fa-solid fa-location-dot"></i> Kanpur, Uttar Pradesh
+
+                </p>
+
+                <p>
+
+                    <i class="fa-solid fa-phone"></i> +91 7607215998
+
+                </p>
+
+                <p>
+
+                    <i class="fa-solid fa-envelope"></i> sktradingcompany1976@gmail.com
+
+                </p>
+
+                <div class="social-icons">
+
+                    <a href="#" aria-label="Facebook">
+
+                        <i class="fa-brands fa-facebook"></i>
+
+                    </a>
+
+                    <a href="#" aria-label="Instagram">
+
+                        <i class="fa-brands fa-instagram"></i>
+
+                    </a>
+
+                    <a href="#" aria-label="LinkedIn">
+
+                        <i class="fa-brands fa-linkedin"></i>
+
+                    </a>
+
+                    <a href="#" aria-label="YouTube">
+
+                        <i class="fa-brands fa-youtube"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+
+                © 2026 S.K. Trading Company | All Rights Reserved.
+
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- Toast -->
+
+    <div id="toast" class="toast">
+
+        Login Successful
+
+    </div>
+
+    <!-- Login JS -->
+
+    <script src="../js/login.js"></script>
+
+</body>
+
+</html>
