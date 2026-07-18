@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | S.K. Trading Company</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <link rel="stylesheet" href="../css/products.css">
+</head>
+
+<body>
+
+    <header>
+
+        <!-- Top Navbar -->
+
+        <div class="navbar">
+
+            <div class="nav-logo">
+                <a href="../index.html">
+                    <img src="../assets/img/logo.jpg" alt="SK Trading Company Logo">
+                </a>
+            </div>
+
+            <div class="nav-address">
+                <p class="deliver">Deliver to</p>
+
+                <div class="location">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>India</span>
+                </div>
+            </div>
+
+            <div class="nav-search">
+
+                <select id="categoryFilter">
+                    <option value="all">All</option>
+                    <option value="Accessories">Accessories</option>
+                    <option value="Fashion">Fashion</option>
+                    <option value="Electronics">Electronics</option>
+                </select>
+
+                <input type="text" id="searchInput" placeholder="Search Products...">
+
+                <button type="button" aria-label="Search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+
+            </div>
+
+            <div class="nav-login">
+                <a href="login.html">Login</a>
+            </div>
+
+            <div class="nav-cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>Cart</span>
+            </div>
+
+        </div>
+
+        <!-- Bottom Navbar -->
+
+        <nav class="menu-bar">
+
+            <a href="../index.html">
+                <i class="fa-solid fa-house"></i> Home
+            </a>
+
+            <a href="products.html" class="active">
+                <i class="fa-solid fa-box"></i> Products
+            </a>
+
+            <a href="categories.html">
+                <i class="fa-solid fa-layer-group"></i> Categories
+            </a>
+
+            <a href="about.html">
+                <i class="fa-solid fa-circle-info"></i> About
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-phone"></i> Contact
+            </a>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <!-- Banner -->
+
+        <section class="product-banner">
+
+            <div class="banner-content">
+
+                <h1>Our Products</h1>
+
+                <p>
+                    Explore our premium collection of accessories, fashion products and electronic gadgets.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- Search -->
+
+        <section class="search-section">
+
+            <h2>Find Your Favorite Product</h2>
+
+            <input type="text" id="productSearch" placeholder="Search by product name...">
+
+        </section>
+
+        <!-- Products -->
+
+        <section class="products">
+
+            <h2 class="section-title">
+                All Products
+            </h2>
+
+            <div class="product-container">
+
+                <!-- Product 1 -->
+
+                <div class="product-card" data-name="Smart Watch">
+
+                    <img src="../assets/img/smart-watch.png" alt="Smart Watch">
+
+                    <h3>Smart Watch</h3>
+
+                    <p class="price">₹1499</p>
+
+                    <button type="button">Add to Cart</button>
+
+                </div>
+
+                <!-- Product 2 -->
+
+                <div class="product-card" data-name="Wireless Earbuds">
+
+                    <img src="../assets/img/wireless-earbuds.jpg" alt="Wireless Earbuds">
+
+                    <h3>Wireless Earbuds</h3>
+
+                    <p class="price">₹999</p>
+
+                    <button type="button">Add to Cart</button>
+
+                </div>
+
+                <!-- Product 3 -->
+
+                <div class="product-card" data-name="Power Bank">
+
+                    <img src="../assets/img/power-bank.jpg" alt="Power Bank">
+
+                    <h3>Power Bank</h3>
+
+                    <p class="price">₹799</p>
+
+                    <button type="button">Add to Cart</button>
+
+                </div>
+
+                <!-- Product 4 -->
+
+                <div class="product-card" data-name="Leather Wallet">
+
+                    <img src="../assets/img/leather-wallet.jpg" alt="Leather Wallet">
+
+                    <h3>Leather Wallet</h3>
+
+                    <p class="price">₹699</p>
+
+                    <button type="button">Add to Cart</button>
+
+                </div>
+                <!-- Product 5 -->
+
+                <div class="product-card" data-name="Bluetooth Speaker">
+
+                    <img src="../assets/img/bluetooth-speaker.jpg" alt="Bluetooth Speaker">
+
+                    <h3>Bluetooth Speaker</h3>
+
+                    <p class="price">₹1299</p>
+
+                    <button type="button">Add to Cart</button>
+
+                </div>
+
+                <!-- Product 6 -->
+
+                <div class="product-card" data-name="Backpack">
+
+                    <img src="../assets/img/backpack.jpg" alt="Backpack">
+
+                    <h3>Backpack</h3>
+
+                    <p class="price">₹899</p>
+
+                    <button type="button">Add to Cart</button>
+
+                </div>
+
+                <!-- Product 7 -->
+
+                <div class="product-card" data-name="Sunglasses">
+
+                    <img src="../assets/img/sunglasses.jpg" alt="Sunglasses">
+
+                    <h3>Sunglasses</h3>
+
+                    <p class="price">₹599</p>
+
+                    <button type="button">Add to Cart</button>
+
+                </div>
+
+                <!-- Product 8 -->
+
+                <div class="product-card" data-name="Mobile Holder">
+
+                    <img src="../assets/img/mobile-holder.jpg" alt="Mobile Holder">
+
+                    <h3>Mobile Holder</h3>
+
+                    <p class="price">₹399</p>
+
+                    <button type="button">Add to Cart</button>
+
+                </div>
+                <!-- Product 9 -->
+
+                <div class="product-card" data-name="Fashion">
+
+                    <img src="../assets/img/Fashion.jpg" alt="Fashion">
+
+                    <h3>Fashion</h3>
+
+                    <p class="price">₹599</p>
+
+                    <button type="button">Add to Cart</button>
+
+                </div>
+                <!-- Product 10 -->
+
+                <div class="product-card" data-name="Home Essential">
+
+                    <img src="../assets/img/candles.jpg" alt="Candles">
+
+                    <h3>Candles</h3>
+
+                    <p class="price">₹1199</p>
+
+                    <button type="button">Add to Cart</button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-container ">
+
+            <div class="footer-box ">
+
+                <h2>S.K. Trading Company</h2>
+
+                <p>
+                    We provide quality products at affordable prices with trusted delivery and excellent customer service.
+                </p>
+
+            </div>
+
+            <div class="footer-box ">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+
+                    <li><a href="../index.html ">Home</a></li>
+
+                    <li><a href="products.html ">Products</a></li>
+
+                    <li><a href="categories.html ">Categories</a></li>
+
+                    <li><a href="about.html ">About Us</a></li>
+
+                </ul>
+
+            </div>
+
+            <div class="footer-box ">
+
+                <h3>Customer Support</h3>
+
+                <ul>
+
+                    <li><a href="# ">FAQs</a></li>
+
+                    <li><a href="# ">Shipping Policy</a></li>
+
+                    <li><a href="# ">Return Policy</a></li>
+
+                    <li><a href="# ">Privacy Policy</a></li>
+
+                </ul>
+
+            </div>
+
+            <div class="footer-box ">
+
+                <h3>Contact</h3>
+
+                <p>
+                    <i class="fa-solid fa-location-dot "></i> Kanpur, Uttar Pradesh
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-phone "></i> +91 7607215998
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-envelope "></i> sktradingcompany1976@gmail.com
+                </p>
+
+                <div class="social-icons ">
+
+                    <a href="# " aria-label="Facebook "><i class="fa-brands fa-facebook "></i></a>
+
+                    <a href="# " aria-label="instagram "><i class="fa-brands fa-instagram "></i></a>
+
+                    <a href="# " aria-label="linkedin "><i class="fa-brands fa-linkedin "></i></a>
+
+                    <a href="# " aria-label="youtube "><i class="fa-brands fa-youtube "></i></a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom ">
+
+            <p>
+                © 2026 S.K. Trading Company | All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+    <script src="../js/products.js "></script>
+
+</body>
+
+</html>
