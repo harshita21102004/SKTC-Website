@@ -1,0 +1,249 @@
+/* ===================================
+   404 Page CSS
+   S.K. Trading Company
+=================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: #f5f7fb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+
+/* ===================================
+   Main Container
+=================================== */
+
+.error-container {
+    width: 100%;
+    max-width: 1100px;
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, .12);
+}
+
+
+/* ===================================
+   Left Side
+=================================== */
+
+.error-left {
+    padding: 60px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.error-left h1 {
+    font-size: 120px;
+    color: #0F4C81;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+.error-left h2 {
+    font-size: 34px;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+.error-left h2 i {
+    color: #f59e0b;
+    margin-right: 10px;
+}
+
+.error-left p {
+    font-size: 17px;
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 35px;
+}
+
+
+/* ===================================
+   Buttons
+=================================== */
+
+.buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.buttons a {
+    text-decoration: none;
+    padding: 14px 26px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.home-btn {
+    background: #0F4C81;
+    color: #fff;
+}
+
+.home-btn:hover {
+    background: #08345d;
+    transform: translateY(-3px);
+}
+
+.contact-btn {
+    background: #fff;
+    color: #0F4C81;
+    border: 2px solid #0F4C81;
+}
+
+.contact-btn:hover {
+    background: #0F4C81;
+    color: #fff;
+}
+
+
+/* ===================================
+   Right Side
+=================================== */
+
+.error-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.error-right img {
+    width: 100%;
+    max-width: 420px;
+    animation: float 3s ease-in-out infinite;
+}
+
+
+/* ===================================
+   Floating Animation
+=================================== */
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+/* ===================================
+   Toast Notification
+=================================== */
+
+.toast {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    background: #198754;
+    color: #fff;
+    padding: 15px 25px;
+    border-radius: 8px;
+    font-size: 15px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+    z-index: 999;
+}
+
+.toast.show {
+    opacity: 1;
+    visibility: visible;
+    bottom: 50px;
+}
+
+
+/* ===================================
+   Responsive Design
+=================================== */
+
+@media(max-width:992px) {
+    .error-container {
+        grid-template-columns: 1fr;
+    }
+    .error-left {
+        text-align: center;
+        align-items: center;
+        padding: 50px 35px;
+    }
+    .buttons {
+        justify-content: center;
+    }
+    .error-right {
+        padding: 30px;
+    }
+}
+
+@media(max-width:768px) {
+    body {
+        padding: 20px;
+    }
+    .error-left h1 {
+        font-size: 90px;
+    }
+    .error-left h2 {
+        font-size: 28px;
+    }
+    .error-left p {
+        font-size: 16px;
+    }
+    .buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+    .buttons a {
+        width: 100%;
+        text-align: center;
+    }
+    .error-right img {
+        max-width: 300px;
+    }
+}
+
+@media(max-width:576px) {
+    .error-container {
+        border-radius: 12px;
+    }
+    .error-left {
+        padding: 35px 20px;
+    }
+    .error-left h1 {
+        font-size: 70px;
+    }
+    .error-left h2 {
+        font-size: 24px;
+    }
+    .error-right {
+        padding: 20px;
+    }
+    .error-right img {
+        max-width: 220px;
+    }
+    .toast {
+        left: 15px;
+        right: 15px;
+        text-align: center;
+    }
+}

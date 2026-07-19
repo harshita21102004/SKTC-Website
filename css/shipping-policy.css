@@ -1,0 +1,206 @@
+/* ===================================
+   Shipping Policy CSS
+   S.K. Trading Company
+=================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #f5f5f5;
+    color: #333;
+    line-height: 1.7;
+}
+
+
+/* ===================================
+   Hero Section
+=================================== */
+
+.shipping-hero {
+    background: linear-gradient(135deg, #0F4C81, #1d6fb8);
+    color: #fff;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.shipping-hero h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.shipping-hero h1 i {
+    margin-right: 10px;
+}
+
+.shipping-hero p {
+    max-width: 800px;
+    margin: auto;
+    font-size: 18px;
+    opacity: .95;
+}
+
+
+/* ===================================
+   Shipping Section
+=================================== */
+
+.shipping-section {
+    padding: 60px 8%;
+}
+
+.shipping-container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+
+/* ===================================
+   Shipping Cards
+=================================== */
+
+.shipping-box {
+    background: #fff;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .08);
+    transition: .3s;
+}
+
+.shipping-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, .12);
+}
+
+.shipping-box h2 {
+    color: #0F4C81;
+    margin-bottom: 15px;
+    font-size: 26px;
+}
+
+.shipping-box p {
+    color: #555;
+    font-size: 16px;
+}
+
+
+/* ===================================
+   Contact List
+=================================== */
+
+.contact-list {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.contact-list li {
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #444;
+    display: flex;
+    align-items: center;
+}
+
+.contact-list i {
+    color: #0F4C81;
+    width: 30px;
+    font-size: 18px;
+}
+
+
+/* ===================================
+   Footer
+=================================== */
+
+footer {
+    background: #0f172a;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 15px;
+}
+
+
+/* ===================================
+   Toast Notification
+=================================== */
+
+.toast {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    background: #198754;
+    color: #fff;
+    padding: 15px 25px;
+    border-radius: 8px;
+    font-size: 15px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+    z-index: 999;
+}
+
+.toast.show {
+    opacity: 1;
+    visibility: visible;
+    bottom: 50px;
+}
+
+
+/* ===================================
+   Responsive Design
+=================================== */
+
+@media(max-width:992px) {
+    .shipping-section {
+        padding: 50px 5%;
+    }
+}
+
+@media(max-width:768px) {
+    .shipping-hero {
+        padding: 60px 20px;
+    }
+    .shipping-hero h1 {
+        font-size: 34px;
+    }
+    .shipping-hero p {
+        font-size: 16px;
+    }
+    .shipping-box {
+        padding: 25px;
+    }
+    .shipping-box h2 {
+        font-size: 22px;
+    }
+}
+
+@media(max-width:576px) {
+    .shipping-section {
+        padding: 40px 5%;
+    }
+    .shipping-box {
+        padding: 20px;
+    }
+    .shipping-box h2 {
+        font-size: 20px;
+    }
+    .shipping-box p,
+    .contact-list li {
+        font-size: 15px;
+    }
+    .contact-list li {
+        align-items: flex-start;
+    }
+    .toast {
+        left: 15px;
+        right: 15px;
+        text-align: center;
+    }
+}

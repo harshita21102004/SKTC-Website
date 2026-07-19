@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shopping Cart | S.K. Trading Company</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- Common CSS -->
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Cart CSS -->
+
+    <link rel="stylesheet" href="../css/cart.css">
+
+</head>
+
+<body>
+
+    <!-- ================= Header ================= -->
+
+    <header>
+
+        <div class="navbar">
+
+            <div class="nav-logo">
+
+                <a href="../index.html">
+
+                    <img src="../assets/img/logo.jpg" alt="S.K. Trading Company Logo">
+
+                </a>
+
+            </div>
+
+            <div class="nav-address">
+
+                <p class="deliver">Deliver to</p>
+
+                <div class="location">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    <span>India</span>
+
+                </div>
+
+            </div>
+
+            <div class="nav-search">
+
+                <select>
+
+                    <option>All</option>
+                    <option>Accessories</option>
+                    <option>Fashion</option>
+                    <option>Mobile Accessories</option>
+                    <option>Gift Items</option>
+
+                </select>
+
+                <input type="text" placeholder="Search Products...">
+
+                <button type="button" aria-label="Search">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                </button>
+
+            </div>
+
+            <div class="nav-login">
+
+                <a href="login.html">Login</a>
+
+            </div>
+
+            <div class="nav-cart">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+                <span>Cart</span>
+
+            </div>
+
+        </div>
+
+        <!-- Menu -->
+
+        <nav class="menu-bar">
+
+            <a href="../index.html">
+
+                <i class="fa-solid fa-house"></i> Home
+
+            </a>
+
+            <a href="products.html">
+
+                <i class="fa-solid fa-box"></i> Products
+
+            </a>
+
+            <a href="categories.html">
+
+                <i class="fa-solid fa-layer-group"></i> Categories
+
+            </a>
+
+            <a href="about.html">
+
+                <i class="fa-solid fa-circle-info"></i> About
+
+            </a>
+
+            <a href="contact.html">
+
+                <i class="fa-solid fa-phone"></i> Contact
+
+            </a>
+
+        </nav>
+
+    </header>
+
+    <!-- ================= Hero ================= -->
+
+    <section class="cart-hero">
+
+        <div class="hero-content">
+
+            <h1>
+
+                <i class="fa-solid fa-cart-shopping"></i> Shopping Cart
+
+            </h1>
+
+            <p>
+
+                Review your selected products before proceeding to checkout.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ================= Cart Section ================= -->
+
+    <section class="cart-section">
+
+        <div class="cart-container">
+
+            <!-- Cart Items -->
+
+            <div class="cart-items">
+
+                <h2>Your Cart</h2>
+
+                <table class="cart-table">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Product</th>
+
+                            <th>Price</th>
+
+                            <th>Quantity</th>
+
+                            <th>Total</th>
+
+                            <th>Remove</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <!-- Product 1 -->
+
+                        <tr>
+
+                            <td class="product-info">
+
+                                <img src="../assets/img/watch.jpg" alt="Smart Watch">
+
+                                <div>
+
+                                    <h3>Premium Smart Watch</h3>
+
+                                    <p>Black Edition</p>
+
+                                </div>
+
+                            </td>
+
+                            <td class="price">
+
+                                ₹2,499
+
+                            </td>
+
+                            <td>
+
+                                <div class="quantity-box">
+
+                                    <button class="minus">
+
+                                        -
+
+                                    </button>
+
+                                    <input type="number" value="1" min="1">
+
+                                    <button class="plus">
+
+                                        +
+
+                                    </button>
+
+                                </div>
+
+                            </td>
+
+                            <td class="subtotal">
+
+                                ₹2,499
+
+                            </td>
+
+                            <td>
+
+                                <button class="remove-btn" aria-label="Remove Product">
+
+                                    <i class="fa-solid fa-trash"></i>
+
+                                </button>
+
+                            </td>
+
+                        </tr>
+
+                        <!-- Product 2 -->
+
+                        <tr>
+
+                            <td class="product-info">
+
+                                <img src="../assets/img/headphones.jpg" alt="Wireless Headphones">
+
+                                <div>
+
+                                    <h3>Wireless Headphones</h3>
+
+                                    <p>Noise Cancelling</p>
+
+                                </div>
+
+                            </td>
+
+                            <td class="price">
+
+                                ₹1,999
+
+                            </td>
+
+                            <td>
+
+                                <div class="quantity-box">
+
+                                    <button class="minus">
+
+                                        -
+
+                                    </button>
+
+                                    <input type="number" value="2" min="1">
+
+                                    <button class="plus">
+
+                                        +
+
+                                    </button>
+
+                                </div>
+
+                            </td>
+
+                            <td class="subtotal">
+
+                                ₹3,998
+
+                            </td>
+
+                            <td>
+
+                                <button class="remove-btn" aria-label="Remove Product">
+
+                                    <i class="fa-solid fa-trash"></i>
+
+                                </button>
+
+                            </td>
+
+                        </tr>
+                    </tbody>
+
+                </table>
+
+            </div>
+
+            <!-- ================= Cart Summary ================= -->
+
+            <div class="cart-summary">
+
+                <h2>Order Summary</h2>
+
+                <div class="summary-item">
+
+                    <span>Subtotal</span>
+
+                    <span id="subtotalPrice">₹6,497</span>
+
+                </div>
+
+                <div class="summary-item">
+
+                    <span>Shipping</span>
+
+                    <span>₹199</span>
+
+                </div>
+
+                <div class="summary-item">
+
+                    <span>GST (18%)</span>
+
+                    <span>₹1,169</span>
+
+                </div>
+
+                <hr>
+
+                <div class="summary-item total">
+
+                    <span>Total</span>
+
+                    <span id="totalPrice">₹7,865</span>
+
+                </div>
+
+                <div class="coupon-box">
+
+                    <input type="text" placeholder="Enter Coupon Code" id="coupon">
+
+                    <button type="button" class="coupon-btn">
+
+                        Apply
+
+                    </button>
+
+                </div>
+
+                <button class="checkout-btn">
+
+                    <i class="fa-solid fa-credit-card"></i>
+
+                    Proceed to Checkout
+
+                </button>
+
+                <a href="products.html" class="continue-shopping">
+
+                    <i class="fa-solid fa-arrow-left"></i> Continue Shopping
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= Footer ================= -->
+
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="footer-box">
+
+                <h2>S.K. Trading Company</h2>
+
+                <p>
+
+                    We provide quality products at affordable prices with trusted delivery and excellent customer service.
+
+                </p>
+
+            </div>
+
+            <div class="footer-box">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+
+                    <li><a href="../index.html">Home</a></li>
+
+                    <li><a href="products.html">Products</a></li>
+
+                    <li><a href="categories.html">Categories</a></li>
+
+                    <li><a href="about.html">About Us</a></li>
+
+                    <li><a href="contact.html">Contact</a></li>
+
+                </ul>
+
+            </div>
+
+            <div class="footer-box">
+
+                <h3>Customer Support</h3>
+
+                <ul>
+
+                    <li><a href="#">FAQs</a></li>
+
+                    <li><a href="#">Shipping Policy</a></li>
+
+                    <li><a href="#">Return Policy</a></li>
+
+                    <li><a href="#">Privacy Policy</a></li>
+
+                </ul>
+
+            </div>
+
+            <div class="footer-box">
+
+                <h3>Contact</h3>
+
+                <p>
+
+                    <i class="fa-solid fa-location-dot"></i> Kanpur, Uttar Pradesh
+
+                </p>
+
+                <p>
+
+                    <i class="fa-solid fa-phone"></i> +91 7607215998
+
+                </p>
+
+                <p>
+
+                    <i class="fa-solid fa-envelope"></i> sktradingcompany1976@gmail.com
+
+                </p>
+
+                <div class="social-icons">
+
+                    <a href="#" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+
+                    <a href="#" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+
+                    <a href="#" aria-label="YouTube">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+
+                © 2026 S.K. Trading Company | All Rights Reserved.
+
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- Toast -->
+
+    <div id="toast" class="toast">
+
+        Cart Updated Successfully!
+
+    </div>
+
+    <!-- Cart JS -->
+
+    <script src="../js/cart.js"></script>
+
+</body>
+
+</html>

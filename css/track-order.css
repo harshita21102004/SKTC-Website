@@ -1,0 +1,325 @@
+/* ===================================
+   Track Order Page CSS
+   S.K. Trading Company
+=================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #f5f5f5;
+    color: #333;
+}
+
+
+/* ===================================
+   Hero Section
+=================================== */
+
+.track-hero {
+    background: linear-gradient(135deg, #0F4C81, #1d6fb8);
+    color: #fff;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.track-hero h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.track-hero h1 i {
+    margin-right: 10px;
+}
+
+.track-hero p {
+    font-size: 18px;
+    opacity: .95;
+}
+
+
+/* ===================================
+   Track Section
+=================================== */
+
+.track-section {
+    padding: 60px 8%;
+}
+
+
+/* ===================================
+   Search Box
+=================================== */
+
+.track-box {
+    background: #fff;
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 35px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .08);
+}
+
+.track-box h2 {
+    color: #0F4C81;
+    margin-bottom: 20px;
+}
+
+.track-box form {
+    display: flex;
+    gap: 15px;
+}
+
+.track-box input {
+    flex: 1;
+    padding: 14px 18px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+    transition: .3s;
+}
+
+.track-box input:focus {
+    border-color: #0F4C81;
+    box-shadow: 0 0 8px rgba(15, 76, 129, .25);
+}
+
+.track-box button {
+    background: #0F4C81;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 14px 28px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.track-box button:hover {
+    background: #08345d;
+    transform: translateY(-2px);
+}
+
+
+/* ===================================
+   Order Details
+=================================== */
+
+.order-details {
+    background: #fff;
+    border-radius: 15px;
+    padding: 35px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .08);
+}
+
+.order-details h2 {
+    color: #0F4C81;
+    margin-bottom: 20px;
+}
+
+.detail-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.detail-row strong {
+    color: #222;
+}
+
+.detail-row span {
+    color: #666;
+}
+
+
+/* ===================================
+   Timeline
+=================================== */
+
+.timeline-title {
+    margin-top: 35px;
+}
+
+.timeline {
+    margin-top: 25px;
+    position: relative;
+    padding-left: 35px;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 16px;
+    top: 0;
+    width: 3px;
+    height: 100%;
+    background: #dcdcdc;
+}
+
+.timeline-item {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 35px;
+}
+
+.timeline-icon {
+    position: absolute;
+    left: -35px;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: #bdbdbd;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    z-index: 2;
+}
+
+.timeline-content {
+    padding-left: 15px;
+}
+
+.timeline-content h3 {
+    color: #222;
+    margin-bottom: 8px;
+}
+
+.timeline-content p {
+    color: #666;
+    line-height: 1.6;
+}
+
+
+/* ===================================
+   Timeline Status Colors
+=================================== */
+
+.timeline-item.completed .timeline-icon {
+    background: #198754;
+}
+
+.timeline-item.completed .timeline-content h3 {
+    color: #198754;
+}
+
+.timeline-item.active .timeline-icon {
+    background: #0F4C81;
+    animation: pulse 1.5s infinite;
+}
+
+.timeline-item.active .timeline-content h3 {
+    color: #0F4C81;
+}
+
+
+/* ===================================
+   Timeline Animation
+=================================== */
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(15, 76, 129, .5);
+    }
+    70% {
+        box-shadow: 0 0 0 12px rgba(15, 76, 129, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(15, 76, 129, 0);
+    }
+}
+
+
+/* ===================================
+   Toast Notification
+=================================== */
+
+.toast {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    background: #198754;
+    color: #fff;
+    padding: 15px 25px;
+    border-radius: 8px;
+    font-size: 15px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+    z-index: 999;
+}
+
+.toast.show {
+    opacity: 1;
+    visibility: visible;
+    bottom: 50px;
+}
+
+
+/* ===================================
+   Responsive Design
+=================================== */
+
+@media(max-width:992px) {
+    .track-section {
+        padding: 50px 5%;
+    }
+}
+
+@media(max-width:768px) {
+    .track-hero {
+        padding: 50px 20px;
+    }
+    .track-hero h1 {
+        font-size: 32px;
+    }
+    .track-hero p {
+        font-size: 16px;
+    }
+    .track-box form {
+        flex-direction: column;
+    }
+    .track-box button {
+        width: 100%;
+    }
+    .detail-row {
+        flex-direction: column;
+        gap: 8px;
+        align-items: flex-start;
+    }
+}
+
+@media(max-width:576px) {
+    .track-section {
+        padding: 40px 5%;
+    }
+    .track-box,
+    .order-details {
+        padding: 25px;
+    }
+    .timeline {
+        padding-left: 28px;
+    }
+    .timeline-icon {
+        left: -28px;
+        width: 28px;
+        height: 28px;
+        font-size: 13px;
+    }
+    .timeline-content {
+        padding-left: 12px;
+    }
+    .toast {
+        left: 15px;
+        right: 15px;
+        text-align: center;
+    }
+}

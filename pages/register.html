@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Register | S.K. Trading Company</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- Common CSS -->
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Register CSS -->
+
+    <link rel="stylesheet" href="../css/register.css">
+
+</head>
+
+<body>
+
+    <!-- ================= Header ================= -->
+
+    <header>
+
+        <div class="navbar">
+
+            <div class="nav-logo">
+
+                <a href="../index.html">
+
+                    <img src="../assets/img/logo.jpg" alt="S.K. Trading Company Logo">
+
+                </a>
+
+            </div>
+
+            <div class="nav-address">
+
+                <p class="deliver">Deliver to</p>
+
+                <div class="location">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    <span>India</span>
+
+                </div>
+
+            </div>
+
+            <div class="nav-search">
+
+                <select>
+
+                    <option>All</option>
+
+                    <option>Accessories</option>
+
+                    <option>Fashion</option>
+
+                    <option>Mobile Accessories</option>
+
+                    <option>Gift Items</option>
+
+                </select>
+
+                <input type="text" placeholder="Search Products...">
+
+                <button type="button" aria-label="Search">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                </button>
+
+            </div>
+
+            <div class="nav-login">
+
+                <a href="login.html">Login</a>
+
+            </div>
+
+            <div class="nav-cart">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+                <span>Cart</span>
+
+            </div>
+
+        </div>
+
+        <nav class="menu-bar">
+
+            <a href="../index.html">
+
+                <i class="fa-solid fa-house"></i> Home
+
+            </a>
+
+            <a href="products.html">
+
+                <i class="fa-solid fa-box"></i> Products
+
+            </a>
+
+            <a href="categories.html">
+
+                <i class="fa-solid fa-layer-group"></i> Categories
+
+            </a>
+
+            <a href="about.html">
+
+                <i class="fa-solid fa-circle-info"></i> About
+
+            </a>
+
+            <a href="contact.html">
+
+                <i class="fa-solid fa-phone"></i> Contact
+
+            </a>
+
+        </nav>
+
+    </header>
+
+    <!-- ================= Register Section ================= -->
+
+    <main>
+
+        <section class="register-section">
+
+            <div class="register-container">
+
+                <!-- Left Side -->
+
+                <div class="register-left">
+
+                    <h1>Create Your Account</h1>
+
+                    <h2>Join S.K. Trading Company</h2>
+
+                    <p>
+
+                        Register today and enjoy premium products, secure shopping, fast delivery and exclusive member benefits.
+
+                    </p>
+
+                    <div class="features">
+
+                        <div class="feature">
+
+                            <i class="fa-solid fa-circle-check"></i>
+
+                            <span>100% Secure Registration</span>
+
+                        </div>
+
+                        <div class="feature">
+
+                            <i class="fa-solid fa-circle-check"></i>
+
+                            <span>Easy Order Tracking</span>
+
+                        </div>
+
+                        <div class="feature">
+
+                            <i class="fa-solid fa-circle-check"></i>
+
+                            <span>Exclusive Offers</span>
+
+                        </div>
+
+                        <div class="feature">
+
+                            <i class="fa-solid fa-circle-check"></i>
+
+                            <span>24×7 Customer Support</span>
+
+                        </div>
+
+                    </div>
+
+                    <img src="../assets/img/register-banner.png" alt="Register Banner" class="register-image">
+
+                </div>
+
+                <!-- Right Side -->
+
+                <div class="register-right">
+
+                    <div class="register-card">
+
+                        <h2>Create Account 🚀</h2>
+
+                        <p>
+
+                            Fill in your details to create your account.
+
+                        </p>
+
+                        <form id="registerForm">
+
+                            <div class="input-box">
+
+                                <label>Full Name</label>
+
+                                <input type="text" id="fullName" placeholder="Enter your full name" required>
+
+                            </div>
+
+                            <div class="input-box">
+
+                                <label>Email Address</label>
+
+                                <input type="email" id="email" placeholder="Enter your email" autocomplete="email" required>
+
+                            </div>
+
+                            <div class="input-box">
+
+                                <label>Mobile Number</label>
+
+                                <input type="tel" id="mobile" placeholder="Enter your mobile number" maxlength="10" required>
+
+                            </div>
+
+                            <div class="input-box">
+
+                                <label>Password</label>
+
+                                <div class="password-box">
+
+                                    <input type="password" id="password" placeholder="Create password" autocomplete="new-password" required>
+
+                                    <i class="fa-solid fa-eye" id="togglePassword">
+                                    </i>
+
+                                </div>
+
+                            </div>
+
+                            <div class="input-box">
+
+                                <label>Confirm Password</label>
+
+                                <div class="password-box">
+
+                                    <input type="password" id="confirmPassword" placeholder="Confirm password" autocomplete="new-password" required>
+
+                                    <i class="fa-solid fa-eye" id="toggleConfirmPassword">
+                                    </i>
+
+                                </div>
+
+                            </div>
+
+                            <div class="register-options">
+
+                                <label>
+
+                                    <input
+                                        type="checkbox"
+                                        id="terms"
+                                        required>
+
+                                    I accept the Terms &amp;
+                                    Conditions
+
+                                </label>
+
+                            </div>
+
+                            <button type="submit" class="register-btn" id="registerBtn">
+
+                                <i class="fa-solid fa-user-plus"></i>
+
+                                Create Account
+
+                            </button>
+
+                            <div class="divider">
+
+                                <span>OR</span>
+
+                            </div>
+                            <button type="button" class="google-btn">
+
+                                <i class="fa-brands fa-google"></i>
+
+                                Continue with Google
+
+                            </button>
+
+                            <div class="login-link">
+
+                                <p>
+
+                                    Already have an account?
+
+                                    <a href="login.html">
+
+                                        Login Here
+
+                                    </a>
+
+                                </p>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- ================= Footer ================= -->
+
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="footer-box">
+
+                <h2>S.K. Trading Company</h2>
+
+                <p>
+
+                    We provide quality products at affordable prices with trusted delivery and excellent customer service.
+
+                </p>
+
+            </div>
+
+            <div class="footer-box">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+
+                    <li>
+                        <a href="../index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="products.html">Products</a>
+                    </li>
+
+                    <li>
+                        <a href="categories.html">Categories</a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">About Us</a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="footer-box">
+
+                <h3>Customer Support</h3>
+
+                <ul>
+
+                    <li><a href="#">FAQs</a></li>
+
+                    <li><a href="#">Shipping Policy</a></li>
+
+                    <li><a href="#">Return Policy</a></li>
+
+                    <li><a href="#">Privacy Policy</a></li>
+
+                </ul>
+
+            </div>
+
+            <div class="footer-box">
+
+                <h3>Contact</h3>
+
+                <p>
+
+                    <i class="fa-solid fa-location-dot"></i> Kanpur, Uttar Pradesh
+
+                </p>
+
+                <p>
+
+                    <i class="fa-solid fa-phone"></i> +91 7607215998
+
+                </p>
+
+                <p>
+
+                    <i class="fa-solid fa-envelope"></i> sktradingcompany1976@gmail.com
+
+                </p>
+
+                <div class="social-icons">
+
+                    <a href="#" aria-label="Facebook">
+
+                        <i class="fa-brands fa-facebook"></i>
+
+                    </a>
+
+                    <a href="#" aria-label="Instagram">
+
+                        <i class="fa-brands fa-instagram"></i>
+
+                    </a>
+
+                    <a href="#" aria-label="LinkedIn">
+
+                        <i class="fa-brands fa-linkedin"></i>
+
+                    </a>
+
+                    <a href="#" aria-label="YouTube">
+
+                        <i class="fa-brands fa-youtube"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+
+                © 2026 S.K. Trading Company | All Rights Reserved.
+
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- Toast Notification -->
+
+    <div id="toast" class="toast">
+
+        Registration Successful!
+
+    </div>
+
+    <!-- Register JS -->
+
+    <script src="../js/register.js"></script>
+
+</body>
+
+</html>
